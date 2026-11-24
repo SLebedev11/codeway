@@ -1,0 +1,277 @@
+*{  
+    padding: 0;  
+    margin: 0;  
+    border: 0;  
+    text-decoration: none;  
+    box-sizing: border-box;
+}  
+     
+:focus,:active{outline: none;}  
+a:focus,a:active{outline: none;}  
+     
+nav,footer,header,aside{display: block;}  
+     
+:root {
+	--paper: #fcfbf8;
+	--surface: #fff;
+	--ink: #211e29;
+	--muted: #5d5867;
+	--accent: #6131cf;
+	--lime-hover: #b1ed16;
+	--lavender: #ede7fa;
+	--line: #dcd8e2;
+	--focus: #4c239e;
+	--catalog-bg: #f1eff5;
+	--tag-bg: #f2f0f5;
+	--input-border: #a39ba9;
+	--filter-border: #c8c2d1;
+	--error: #a22c43;
+	--hero-bg: #f0eafa;
+	--hero-border: #d6cce5;
+	--hero-window-bg: #f5f1fa;
+	--hero-window-text: #69567f;
+	--hero-window-dots: #a798bc;
+	--hero-shadow: #e6e0ec;
+	--status-dot: #9ec383;
+	--status-halo: #e8efdf;
+	--course-peach-tint: #ffe5d8;
+	--course-peach-tone: #943f24;
+	--course-lemon-tint: #faebae;
+	--course-lemon-tone: #655010;
+	--course-aqua-tint: #d6eff5;
+	--course-aqua-tone: #215e70;
+	--course-mint-tint: #def0df;
+	--course-mint-tone: #326044;
+	--course-blue-tint: #dfe9fb;
+	--course-blue-tone: #344f8d;
+	--course-lilac-tint: #ede7fa;
+	--course-lilac-tone: #6131cf;
+	--lime: #c2ff24;
+	--lime-pressed: #9ed30e;
+	--lime-edge: #658600;
+	--secondary-border: #aaa2b6;
+	--lavender-pressed: #e2d8f3;
+
+
+    --font-family: "Inter", sans-serif;
+    --second-family: "Roboto Mono", sans-serif;
+} 
+     
+input,button,textarea{font-family:inherit;}  
+     
+input::-ms-clear{display: none;}  
+button{cursor: pointer;}  
+button::-moz-focus-inner {padding:0;border:0;}  
+a, a:visited{text-decoration: none;}  
+a:hover{text-decoration: none;}  
+ul li{list-style: none;}  
+img{vertical-align: top;}  
+     
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}  
+     
+html{  
+    scroll-behavior: smooth;  
+}
+
+
+
+
+.way {
+    background-color: var(--catalog-bg);
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.way__container {
+    padding: 86px 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.way__header {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.way__header-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.way__header-bigtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 112%;
+    letter-spacing: -0.06em;
+    color: var(--ink);
+}
+.way__header-bigtitle-span {
+    color: var(--accent);
+}
+
+.way__header-list{
+    display: flex;
+    gap: 8px;
+}
+.way__header-list-item {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 155%;
+    color: var(--ink);
+    padding: 10px 16px;
+    min-height: 44px;
+    border: 1px solid var(--filter-border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: ease-in-out 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.way__header-list-item:hover{
+    border: 1px solid var(--lime-edge);
+    background-color: var(--lime);
+}
+.way__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.way__main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px;
+    background: var(--surface);
+}
+.way__card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.way__card-header-icon {
+    border-radius: 14px;
+    padding: 15px 7px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon1{
+    background-color: var(--course-peach-tint);
+    
+}
+.icon2{
+    background-color: var(--course-lemon-tint);
+    color: var(--course-lemon-tone);
+}
+.icon3{
+    background-color: var(--course-aqua-tint);
+    color: var(--course-aqua-tone);
+}
+.icon4{
+    background-color: var(--course-mint-tint);
+    color: var(--course-mint-tone);
+}
+.icon5{
+    background-color: var(--course-lilac-tint);
+    color: var(--course-lilac-tone);
+}
+.icon6{
+    background-color: var(--course-blue-tint);
+    color: var(--course-blue-tone); 
+}
+.icon7{
+    background-color: var(--course-aqua-tint);
+    color: var(--course-aqua-tone); 
+}
+.icon8{
+    background-color: var(--course-peach-tint);
+    color: var(--course-peach-tone);
+}
+.icon9{
+    background-color: var(--course-lilac-tint);
+}
+.way__card-header-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--muted);
+}
+.way__card-main {
+    display: flex;
+    flex-direction: column;
+}
+.way__card-main-title {
+    margin-bottom: 10px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 112%;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+}
+.way__card-main-text {
+    margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 155%;
+    color: var(--muted);
+}
+.way__card-main-list {
+    display: flex;
+    gap: 5.6px;
+}
+
+.card-main-list__item {
+    border-radius: 6px;
+    padding: 2px 7px;
+    background: var(--tag-bg);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 155%;
+    color: var(--ink);
+}
+.way__card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+    padding: 8px 0 0;
+}
+.way__card-footer-right {
+    display: flex;
+    gap: 7px;
+}
+.card-footer-right__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 155%;
+    color: var(--muted);
+}
+.card-footer-right__link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 155%;
+    color: var(--accent);
+}
